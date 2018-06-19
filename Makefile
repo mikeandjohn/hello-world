@@ -8,7 +8,7 @@ all: $(OBJS)
 	$(CC) -o $(EXES) $(OBJS) 
 
 check:
-	if [ -f ./$(EXES).c ];\
+	@if [ -f ./$(EXES).c ];\
 	then\
 		echo "$(EXES).c is exist";\
 	else\
